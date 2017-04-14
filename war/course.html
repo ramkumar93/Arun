@@ -1,0 +1,167 @@
+<html>
+<link rel="stylesheet" href="css/colstyle1.css" type="text/css">
+<head>COURSE</head>
+<body class="one">
+<table class="ablcourse1">
+<caption><font class=1>AVAILABLE COURSES:</font></caption>
+<th>REGULAR
+<th>SELF FINANCE
+<tr><td class="three">
+<ul>
+	<li><font class=3><u>UNDER GRADUATE</u></font>
+               	<ul style="DISC">
+               		<li><font class=4><i>ARTS</i></font>
+        			<ol><font class=5>
+                        		<li>B.A(TAMIL)
+                        		<li>B.A(ENGLISH)
+                        		<li>B.A(ECONOMICS)
+                       			<li>B.A(HISTORY)
+		     		</ol>
+                 	<li><font class=4><i>COMMERCE</i></font>
+		    	 	<ol><font class=5>
+					<li>B.COM                         
+                   		</ol></font>
+                 	<li><font class=4><i>SCIENCE</i></font>
+                     		<ol><font class=5>
+                       			<li>B.Sc(COMPUTER SCIENCE)
+                       		 	<li>B.Sc(PHYSICS)
+                        		<li>B.Sc(MATHS - Major with PHYSICS and COMPUTER<br>
+			 			and COMPUTATIONAL METHODS as ancillaries)		
+					<li>B.Sc(MATHS - Major with PHYSICS and CHEMISTRY<br>
+			 			ancillaries)
+                        			<li>B.Sc(CHEMISTRY)
+			                        <li>B.Sc(BOTANY)
+			                        <li>B.Sc(ZOOLOGY)
+		                      </ol></font>    
+               		</ul>
+</ul>
+<td  class="three">
+<ul>
+	<li><font class=3><u>UNDER GRADUATE</u></font>
+        	<ul style="DISC">
+			<li><font class=4><i>ARTS</i></font>
+                		<ol><font class=5>
+                        		<li>B.A(TAMIL)
+                        		<li>B.A(ENGLISH)
+                       			<li>B.A(ECONOMICS)
+                        		<li>B.A(SOCIOLOGY)
+				</ol>
+		 	<li><font class=4><i>COMMERCE</i></font><br>
+                        	<ol><font class=5>
+					<li>B.Com
+				</ol>                         
+	                <li><font class=4><i>SCIENCE</i></font><br>
+                        	<ol><font class=5>
+                        		<li>B.Sc(COMPUTER SCIENCE)
+                        		<li>B.Sc(MATHS - Major with PHYSICS and COMPUTER<br>
+						and COMPUTATIONAL METHODS as ancillaries)
+                        		<li>B.Sc(MATHS - Major with PHYSICS and CHEMISTRY<br>
+	 					ancillaries)
+                        		<li>B.Sc(ELECTRONICS & COMMUNICATION)
+                        		<li>B.Sc(INFORMATION TECHNOLOGY)
+                        		<li>B.Sc(BIOTECHNOLOGY)
+                                </ol></font>    
+               </ul>
+</ul>
+<tr><td  class="three">	
+	<ul>
+		<li><font class=3><u>POST GRADUATE</u></font>
+			<ul style="DISC">
+				<li><font class=4><i>ARTS</i></font>
+					<ol><font class=5>
+						<li>M.A(TAMIL)
+						<li>M.A(ENGLISH)
+						<li>M.A(ECONOMICS)
+						<li>M.A(SOCIOLOGY)
+						<li>M.A(PHILOSOPHY)
+					</ol>
+				<li><font class=4><i>SCIENCE</i>
+					<ol><font class=5>
+						<li>M.Sc(BOTANY)
+						<li>M.Sc(CHEMISTRY)
+						<li>M.Sc(MATHEMATICS)
+						<li>M.Sc(PHYSICS)
+					</ol>
+				<li><font class=4><i>M.Phil</i></font>
+					<ol><font class=5>
+						<li>ENGLISH
+					</ol>
+				<li><font class=4><i>DOCTORAL</i>
+					<ol><font class=5>
+						<li>TAMIL
+						<li>PHILOSOPHY
+						<li>BOTANY
+						<li>ZOOLOGY
+						<li>PHYSICS
+						<li>ECONOMICS
+					</ol>
+			</ul>
+</ul>
+<td class="three">
+<ul style="">	
+	<li><font class=3><u>POST GRADUATE</u></font><br>
+		<ul style="DISC">
+			<li><font class=4><i>SCIENCE</i></font><br>
+				<ol><font class=5>
+					<li>M.Sc(COMPUTER SCIENCE)
+					<li>M.Sc(MICROBIOLOGY)
+					<li>M.Sc(PHYSICS)
+					<li>M.Sc(ZOOLOGY)
+                                </ol>
+			<li><font class=4><i>COMMERCE</i></font><br>
+				<ol><font class=5>
+					<li>M.COM
+				</ol>
+			<li><font class=4><i>M.Phil</i></font><br>
+				<ol><font class=5>
+					<li>TAMIL
+					<li>PHYSICS
+					<li>MATHEMATICS
+				</ol>
+		</ul>	
+</ul>
+</table> 
+<br>
+<hr width=75% size=4 color="green">
+<script language="javascript" type="text/javascript">
+function s2()
+{
+	if(course.graduate.value=="postgraduate")
+	{
+	
+	alert(course.graduate.value);
+	alert(course.section1.value);
+	}
+}
+</script>
+<form name="course" method="post" action="/Coursetable">
+<table class="sltcourse1">
+
+
+<tr><td class="two">Select GRADUATE :
+    <td class="two"><input type="radio" name="graduate">Post Graduate
+        <input type="radio" name="graduate">Under Graduate
+<tr><td class="two">Select DIVISION :
+    <td class="two"><input type="radio" name="division" onclick="s2()">Arts
+        <input type="radio" name="division">Science
+<tr><td class="two">Select COURSE :
+    <td class="two">
+    <section name="section1" id="hai">
+	<select name="coursename">
+         <option>---Course---
+         <option>B.Sc(Computer Science)
+	 <option>bsc maths
+        </select>
+</section>
+<section name="section2" id="hai1" style="display: none;">
+	<select name="coursename">
+         <option>Course
+         <option>B.Sc(Computer Science)
+	 <option>bsc maths
+        </select>
+</section>
+<input type="submit" value="SAVE"> </input>
+</table>
+</form>
+</body>
+</html>

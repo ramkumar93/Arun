@@ -1,0 +1,101 @@
+<html>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<body bgcolor="powderblue">
+<form name="preview" method="post" action="/Previewtable">
+<table class="personal1">
+<caption>Personal <input type="submit" name="preview" id="previewbut" value="Preview"></input></caption>
+<tr><td class="one"><font class="one"> Id no: <td class="one"><input type="text" name="id">
+<tr><td class="one"> First Name:  <td class="one"><input type="text" name="firstname">
+<tr><td class="one"> Middle Name: <td class="one"><input type="text" name="middlename">
+<tr><td class="one"> Last Name:   <td class="one"><input type="text" name="lastname">
+<tr><td class="one"> D.O.B :      <td class="one"><input type="text" name="day" size=2 placeholder="DD">-
+			<input type="text" name="month"></input>-
+			<input type="text" name="year" placeholder="YYYY" size=4>
+<tr><td class="one"> AGE:         <td class="one"><input type="text" id="age">
+<tr><td class="one"> GENDER :     <td class="one"><input type="text" name="gender">   
+<tr><td class="one"> Father's Name :<td class="one"><input type="text" name="fathername">
+<tr><td class="one"> Father's Occupation :<td class="one"><input type="text" name="fatheroccupation">
+<tr><td class="one"> Mother's Name :<td class="one"><input type="text" name="mothername">
+<tr><td class="one"> Annual Income :<td class="one"><input type="text" name="annualincome">
+<tr><td class="one"> Religion :    <td class="one"><input type="text" name="religion">
+<tr><td class="one"> Caste:        <td class="one"><input type="text" name="caste">
+<tr><td class="one">If applicant is a special<br> talented  person :<td class="one"><input type="text" name="stp">
+<tr><td class="one">If applicant father<br> is Ex-serviceman :<td class="one"><input type="text" name="exserviceman"> 
+<tr><td class="one">Blood Group:</font>  <td class="one"><input type="text" name="bloodgroup" placeholder="example O+">
+<!--  <tr><td class="one"> <input type="button" name="b1" value="SAVE" onclick="validatepersonal(personal)">
+    <td class="one"> <input type="reset" name="b2" value="CLEAR">--> 
+</table>
+<!-- <form> -->
+
+<!-- <form name="contact"> -->
+<table class="contact1">
+<!-- <caption><a href="course_details.html"><img src="home.bmp" name="homeimage"></img></a>
+         <a href="guide.html"><img src="guide.bmp"  
+
+name="guideimage"></a></caption><br><br>  -->
+<caption>contact</caption>
+<tr><td class="one" colspan=1><font class="one">ADDRESS:<br>
+         Permanent Address:<br>
+        <textarea name="permanentaddress" rows=5 column=25 placeholder="Pt.No/Street Name/City"></textarea><br>
+<br>District : <input type="text" name="permanentdistrict">
+<br>Taluk : <input type="text" name="permanenttaluk">
+<td class="one" colspan=2>ADDRESS:<br>
+        Residental Address:<br>
+        <textarea name="residentaladdress" rows=5 column=25 placeholder="Pt.No/Street Name/City"></textarea>
+<br>District : <input type="text" name="residentaldistrict">
+<br>Taluk : <input type="text" name="residentaltaluk">
+<tr><td class="one">Father's or Guardian<br>Mobile Number :
+    <td class="one">+91<input type="text" name="mobilenumber1" placeholder="---10 digits">
+<tr><td class="one">Student or Applicant<br>Mobile Number :
+    <td class="one">+91<input type="text" name="mobilenumber2" placeholder="---10 digits">
+<tr><td class="one">E-mail :</font><td class="one"><input type="text" name="email" placeholder="sampleid@email.com">
+</table>
+<!-- <input type="button" value="ok" onclick="validatecontact(contact)">
+<input type="button" value="say hello" onclick="sayhello()"> -->
+<!-- </form> -->
+
+<!-- <form name="academic"> -->
+<table class="academic1">
+<!-- <caption><a href="course_details.html"><img src="home.bmp" name="homeimage"></a>
+         <a href="guide.html"><img src="guide.bmp" name="guideimage"></a></caption><br><br> -->
+         <caption>academic</caption>
+<tr><td colspan=4>School Name :</td>
+<tr><td class="one">S.S.L.C :<td class="one"><input type="text" id="sslcname">
+    <td class="one">H.S.C :<td class="one"><input type="text" name="hscname">
+<tr><td colspan=4>Mark Statement :</td>
+<tr><td class="one">S.S.L.C :</td><td class="one"><input type="text" name="sslcmark">
+    <td class="one">H.S.C :<td class="one"><input type="text" name="hscmark">
+<tr><td class="one">GROUP :<td class="one"><input type="text" name="group">
+<tr><td colspan=4>MAJOR GROUPS :</td></tr>
+<tr><td class="one">subject-1 :</td>
+	<td class="one"><input type="text" name="sub1"><td class="one"><input type="number" name="mark1"></td>
+
+<tr><td class="one">subject:</td>
+	<td class="one"><input type="text" name="sub2"><td class="one"><input type="number" name="mark2"></td>
+
+<tr><td class="one">subject 1:</td>
+	<td class="one"><input type="text" name="sub3"><td class="one"><input type="number" name="mark3"></td>
+
+<tr><td class="one">subject 1:</td>
+	<td class="one"><input type="text" name="sub4"><td class="one"><input type="number" name="mark4"></td>
+<tr><td><td>TOTAL :<input type="number" id="totalmark">
+<!-- 	<td><input type="button" onclick="total()" value="TOTAL"> -->
+
+</table>
+<!-- <input type="button" value="save" onclick="validateacademic(academic)">
+<input type="button" value="hai" onclick="s1()"> -->
+<!-- </form> -->
+
+<!-- <form name="course"> -->
+<table class="sltcourse1">
+<!--<caption><a href="index1.html"><img src="home.bmp" name="homeimage"></a>
+         <a href="guide.html"><img src="guide.bmp" name="guideimage"></a></caption><br> <br> -->
+         <caption>course</caption>
+<tr><td class="two"> GRADUATE : <td class="two"><input type="text" name="graduate">
+<tr><td class="two"> DIVISION : <td class="two"><input type="text" name="division">
+<tr><td class="two"> COURSE :   <td class="two"><input type="text" name="ugcourse">
+</table>
+ </form> 
+
+</body>
+</html>

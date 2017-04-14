@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="css/colstyle1.css" type="text/css">
+<head>contact</head>
+<script language="javascript" type="text/javascript">
+function sayhello()
+{
+	alert("hello");
+}
+function validatecontact(contact)
+{
+	error1="";
+	if(contact.permanentaddress.value=="")
+		error1+="permanent address";
+	if(contact.permanentdistrict.value=="---selectone---")
+		error1+="\npermanent district";
+	if(contact.permanenttaluk.value=="---selectone")
+		error1+="\npermanent taluk";
+	if(contact.residentaladdress.value=="")
+		error1+="\nresidental address";
+	if(contact.residentaldistrict.value=="---selectone---")
+		error1+="\nresisdental district";
+	if(contact.residentaltaluk.value=="---selectone---")
+		error1+="\nresisdental taluk";
+	if(contact.mobilenumber1.value=="")
+		error1+="\nmobile number1";
+	if(contact.mobilenumber2.value=="")
+		error1+="\nmobile number2";
+	if(contact.email.value=="")
+		error1+="\ne-mail id";
+		alert("enter "+error1);
+}
+</script>
+<body class="one">
+<form name="contact" method="post" action="/Contacttable">
+<input type="text" name="id" ></input>
+<table class="contact1">
+<tr><td class="one" colspan=1>ADDRESS:<br>
+         Permanent Address:<br>
+        <textarea name="permanentaddress" rows=5 column=25 placeholder="Pt.No/Street Name/City"></textarea><br>
+<br>District :<select name="permanentdistrict">
+		 <option>---selectone---
+                 <option>Madurai
+                 <option>Sivagangai
+                 <option>Virudhunagar
+                 <option>Dindigul
+                 </select>
+<br>Taluk :<select name="permanenttaluk">
+		 <option>---selectone---
+                 <option>Madurai-North
+                 <option>Madurai-south
+                 <option>Madurai-central
+                 <option>Madurai-East
+                 <option>Madurai-West
+                 <option>TPK
+		</select>
+<td class="one" colspan=2>ADDRESS:<br>
+        Residental Address:<br>
+        <textarea name="residentaladdress" rows=5 column=25 
+
+placeholder="Pt.No/Street Name/City"></textarea>
+<br>District :<select name="residentaldistrict">
+		 <option>---selectone---
+                 <option>Madurai
+                 <option>Sivagangai
+                 <option>Virudhunagar
+                 <option>Dindigul
+                 </select>
+<br>Taluk :<select name="residentaltaluk">
+		 <option>---selectone---
+                 <option>Madurai-North
+                 <option>Madurai-south
+                 <option>Madurai-central
+                 <option>Madurai-East
+                 <option>Madurai-West
+                 <option>TPK
+		</select>
+<tr><td class="one">Father's or Guardian<br>Mobile Number :
+    <td class="one">+91<input type="text" name="mobilenumber1" placeholder="---10 
+
+digits">
+<tr><td class="one">Student or Applicant<br>Mobile Number :
+    <td class="one">+91<input type="text" name="mobilenumber2" placeholder="---10 
+
+digits">
+<tr><td class="one">E-mail :</font><td class="one"><input type="text" name="email" placeholder="sampleid@email.com">
+	<tr><td><input type="submit" value="ok"  class="button" onclick="validatecontact(contact)">
+		<td><input type="button" value="say hello" class="button" onclick="sayhello()">
+</table>
+
+</form>
+</body>
+</html>
+       
+                 
