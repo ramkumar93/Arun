@@ -1,0 +1,341 @@
+<html>
+<link rel="stylesheet" href="css/colstyle1.css" type="text/css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+ACADEMIC</head>
+<script lang="javascript" type="text/javascript">
+function validateacademic(academic)
+
+{
+	error1="";
+	if(academic.sslcname.value=="")
+		error1+="\nsslc name";
+	if(academic.hscname.value=="")
+		error1+="\nhsc name";
+	if(academic.sslcmark.value=="")
+		error1+="\nupload sslc mark statement";
+	if(academic.hscmark.value=="")
+		error1+="\nupload hsc mark statement";
+	if(academic.course.value=="---selectone---")
+		error1+="\nselect course";
+	alert("enter "+error1);
+}
+
+function calctotal()
+{
+	alert("j");
+	 var z=Number(academic.mark1.value)+Number(academic.mark2.value)+Number(academic.mark3.value)+Number(academic.mark4.value)
+ 			+Number(academic.tamil.value)+Number(academic.english.value);
+ 		alert(z);
+ 		document.getElementById('totalmark').value=z;
+ 		var j=1;
+ 		while(j<4)
+		 {
+ 		if(academic.tamil.value<"70")
+ 		 {
+ 			 document.getElementById('er1').style.display="block";
+ 			 document.getElementById('er1').style.color="red";
+ 			 }
+ 		else
+ 			 {
+ 			 document.getElementById('er1').style.display="none";
+ 			 }
+ 		if(academic.english.value<"70")
+ 		{
+ 		 document.getElementById('er2').style.display="block";
+ 	 	 document.getElementById('er2').style.color="red";
+ 		 }
+ 	 	else
+ 	 	{
+ 	 	document.getElementById('er2').style.display="none";
+ 	 	}
+ 		if(academic.mark+j.value<"70")
+ 		 {
+ 			 document.getElementById('er3').style.display="block";
+ 		 	 document.getElementById('er3').style.color="red";
+ 			 }
+ 		 else
+ 		 {
+ 		 document.getElementById('er3').style.display="none";
+ 		 }
+
+ 		 if(academic.mark2.value<"70")
+ 		 {
+ 			 document.getElementById('er4').style.display="block";
+ 		 	 document.getElementById('er4').style.color="red";
+ 			 }
+ 		 else
+ 		 {
+ 		 document.getElementById('er5').style.display="none";
+ 		 }
+ 		 if(academic.mark3.value<"70")
+ 		 {
+ 			 document.getElementById('er5').style.display="block";
+ 		 	 document.getElementById('er5').style.color="red";
+ 			 }
+ 		 else
+ 		 {
+ 		 document.getElementById('er5').style.display="none";
+ 		 }
+ 		 if(academic.mark4.value<"70")
+ 		 {
+ 			 document.getElementById('er6').style.display="block";
+ 		 	 document.getElementById('er6').style.color="red";
+ 			 }
+ 		 else
+ 		 {
+ 		 document.getElementById('er6').style.display="none";
+ 		 }
+ 		 
+ 		alert(j);
+ 		 j++;
+ 		 }
+
+}
+</script>
+ <!---->
+ <!--  -->
+
+
+ <!-- if(academic.tamil.value<70) 
+    {
+	 document.getElementById('er1').style.display="block";
+ 	 document.getElementById('er1').style.color="red";
+	 }
+ else
+	 {
+	 document.getElementById('er1').style.display="none";
+	 }
+ 
+
+  -->
+
+
+<body class="one">
+<form name="academic" method="post" action="/Academictable">
+<table class="academic1">
+
+<tr><td colspan=4>School Name :</td>
+<tr><td class="one">S.S.L.C :<td class="one"><input type="text" id="sslcname" name="sslcname">
+    <td class="one">H.S.C :<td class="one"><input type="text" name="hscname">
+<tr><td colspan=4>Mark Statement :</td>
+<tr><td class="one">S.S.L.C :</td><td class="one"><input type="file" name="sslcmark">
+    <td class="one">H.S.C :<td class="one"><input type="file" name="hscmark">
+<tr><td class="one">GROUP :<td class="one"><select name="group">
+		<option>---selectone---
+                <option>1 st group
+                <option>2nd Group
+                <option>3rd Group
+                <option>4th Group
+               </select>
+<tr><td colspan=4>MAJOR GROUPS :</td></tr>
+
+<tr><td class="one" colspan=2 style="padding-left: 240px;">Tamil :</td>
+<td class="one"><input type="number" name="tamil"></td>
+<td><section id="er1" style="display: none";> *invalid Mark</section></td>
+
+<tr><td class="one" colspan=2 style="padding-left: 240px;">English :</td>
+<td class="one"><input type="number" name="english"></td>
+<td><section id="er2" style="display: none";> *invalid Mark</section></td>
+
+<tr><td class="one">subject-1 :</td>
+<td class="one"><select name="sub1">
+<option>Accountancy</option>
+<option>Advanced Language</option>
+<option>Agricultural Chemicals</option>
+<option>Bio – Chemistry</option>
+<option>Biology</option>
+<option>Botany</option>
+<option>Business Maths</option>
+<option>Chemistry</option>
+<option>Commerce</option>
+<option>Communicative English</option>
+<option>Computer Science</option>
+<option>Drawing &Painting</option>
+<option>Economics</option>
+<option>Foundation Science</option>
+<option>Geography</option>
+<option>History</option>
+<option>Home Science</option>
+<option>Indian Culture</option>
+<option>Mathematics</option>
+<option>Micro – Biology</option>
+<option>Nursing</option>
+<option>Nutrition & Die tics</option>
+<option>Physics</option>
+<option>Political Science</option>
+<option>Practical</option>
+<option>Practical-shorthand</option>
+<option>Practical-Type Writing</option>
+<option>Practical-1</option>
+<option>Pratical-2</option>
+<option>Siddha</option>
+<option>Statics</option>
+<option>Theory</option>
+<option>Theory-Office Management</option>
+<option>Zoology</option></td>
+<td class="one"><input type="number" name="mark1"></td>
+<td><section id="er3"  style="display: none;"> *invalid Mark</section>
+
+<tr><td class="one">subject-2:</td>
+<td class="one"><select name="sub1">
+<option>Accountancy</option>
+<option>Advanced Language</option>
+<option>Agricultural Chemicals</option>
+<option>Bio – Chemistry</option>
+<option>Biology</option>
+<option>Botany</option>
+<option>Business Maths</option>
+<option>Chemistry</option>
+<option>Commerce</option>
+<option>Communicative English</option>
+<option>Computer Science</option>
+<option>Drawing &Painting</option>
+<option>Economics</option>
+<option>Foundation Science</option>
+<option>Geography</option>
+<option>History</option>
+<option>Home Science</option>
+<option>Indian Culture</option>
+<option>Mathematics</option>
+<option>Micro – Biology</option>
+<option>Nursing</option>
+<option>Nutrition & Die tics</option>
+<option>Physics</option>
+<option>Political Science</option>
+<option>Practical</option>
+<option>Practical-shorthand</option>
+<option>Practical-Type Writing</option>
+<option>Practical-1</option>
+<option>Pratical-2</option>
+<option>Siddha</option>
+<option>Statics</option>
+<option>Theory</option>
+<option>Theory-Office Management</option>
+<option>Zoology</option></td>
+<td class="one"><input type="number" name="mark2"></td>
+<td><section id="er4" style="display: none;"> *invalid Mark</section></td>
+
+<tr><td class="one">subject-3:</td>
+<td class="one"><select name="sub1">
+<option>Accountancy</option>
+<option>Advanced Language</option>
+<option>Agricultural Chemicals</option>
+<option>Bio – Chemistry</option>
+<option>Biology</option>
+<option>Botany</option>
+<option>Business Maths</option>
+<option>Chemistry</option>
+<option>Commerce</option>
+<option>Communicative English</option>
+<option>Computer Science</option>
+<option>Drawing &Painting</option>
+<option>Economics</option>
+<option>Foundation Science</option>
+<option>Geography</option>
+<option>History</option>
+<option>Home Science</option>
+<option>Indian Culture</option>
+<option>Mathematics</option>
+<option>Micro – Biology</option>
+<option>Nursing</option>
+<option>Nutrition & Die tics</option>
+<option>Physics</option>
+<option>Political Science</option>
+<option>Practical</option>
+<option>Practical-shorthand</option>
+<option>Practical-Type Writing</option>
+<option>Practical-1</option>
+<option>Pratical-2</option>
+<option>Siddha</option>
+<option>Statics</option>
+<option>Theory</option>
+<option>Theory-Office Management</option>
+<option>Zoology</option></td>
+<td class="one"><input type="number" name="mark3"></td>
+<td><section id="er5"  style="display: none;"> *invalid Mark</section></td>
+
+<tr><td class="one">subject-4:</td>
+<td class="one"><select name="sub1">
+<option>Accountancy</option>
+<option>Advanced Language</option>
+<option>Agricultural Chemicals</option>
+<option>Bio – Chemistry</option>
+<option>Biology</option>
+<option>Botany</option>
+<option>Business Maths</option>
+<option>Chemistry</option>
+<option>Commerce</option>
+<option>Communicative English</option>
+<option>Computer Science</option>
+<option>Drawing &Painting</option>
+<option>Economics</option>
+<option>Foundation Science</option>
+<option>Geography</option>
+<option>History</option>
+<option>Home Science</option>
+<option>Indian Culture</option>
+<option>Mathematics</option>
+<option>Micro – Biology</option>
+<option>Nursing</option>
+<option>Nutrition & Die tics</option>
+<option>Physics</option>
+<option>Political Science</option>
+<option>Practical</option>
+<option>Practical-shorthand</option>
+<option>Practical-Type Writing</option>
+<option>Practical-1</option>
+<option>Pratical-2</option>
+<option>Siddha</option>
+<option>Statics</option>
+<option>Theory</option>
+<option>Theory-Office Management</option>
+<option>Zoology</option></td>
+<td class="one"><input type="number" name="mark4"></td>
+<td><section id="er6"  style="display: none;"> *invalid Mark</section></td>
+
+<tr><td><td><section>total</section><br>
+			<input type="number" id="totalmark"></input>
+	<td><input type="button" onclick="calctotal()" value="TOTAL" class="button"></input>
+<tr><td><input type="submit" value="save" onclick="validateacademic(academic)" class="button">
+	<td><input type="button" value="hai" onclick="s1()" class="button">
+</table>
+
+</form>
+<script language="javascript" type="text/javascript">
+function validateactivity(activity)
+{
+	error1="";
+	if((activity1.activity[0].checked==false)&&(activity1.activity[1].checked==false)&&(activity1.activity[2].checked==false))
+		error1+="\n select acitivity";
+	if(error1=="")
+		alert("\nAll information saved");
+	else
+		alert(error1);
+}
+</script>
+<form name="activity1">
+<table class="activity1" border=1>
+<tr><td class="one">Select One :<td class="one"><input type="radio" name="activity">NCC
+                    <td class="one"><input type="radio" name="activity">NSS
+                    <td class="one"><input type="radio" name="activity">SPORTS
+                    <td class="one"><input type="radio" name="activity">AEEP
+                    <td class="one"><input type="radio" name="activity">OTHERS
+<tr><td class="one">Select One :<td class="one"><input type="checkbox" name="sports">SPORTS
+                    <td class="one"><input type="checkbox" name="dance">DANCE
+                    <td class="one"><input type="checkbox" name="singing">SINGING
+                    <td class="one"><input type="checkbox" name="drawing">DRAWING
+                    <td class="one"><input type="checkbox" name="read book">READING BOOK
+<tr><td><input type="submit" value="SAVE" onclick="validateactivity(activity)" class="button"></input>                    
+</table>
+
+</form>
+</body>
+</html>
+    

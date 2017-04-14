@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Personal</servlet-name>
+		<servlet-class>com.arunp.PersonalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Personal</servlet-name>
+		<url-pattern>/Personaltable</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Contact</servlet-name>
+		<servlet-class>com.arunp.ContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Contact</servlet-name>
+		<url-pattern>/Contacttable</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Academic</servlet-name>
+		<servlet-class>com.arunp.AcademicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Academic</servlet-name>
+		<url-pattern>/Academictable</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Course</servlet-name>
+		<servlet-class>com.arunp.CourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Course</servlet-name>
+		<url-pattern>/Coursetable</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Applicant</servlet-name>
+		<servlet-class>com.arunp.ApplicantServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Applicant</servlet-name>
+		<url-pattern>/Applicanttable</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>Preview</servlet-name>
+	    <servlet-class>com.arunp.PreviewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Preview</servlet-name>
+	    <url-pattern>/Previewtable</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+	    <servlet-name>Oldapplicant</servlet-name>
+	    <servlet-class>com.arunp.OldapplicantServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Oldapplicant</servlet-name>
+	    <url-pattern>/Oldapplicanttable</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>HomeServlet</servlet-name>
+	    <servlet-class>com.arunp.HomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>HomeServlet</servlet-name>
+	    <url-pattern>/home</url-pattern>
+	</servlet-mapping>
+		<servlet>
+	    <servlet-name>RetrieveServlet</servlet-name>
+	    <servlet-class>com.arunp.RetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>RetrieveServlet</servlet-name>
+	    <url-pattern>/retrieve</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>UpdateServlet</servlet-name>
+	    <servlet-class>com.arunp.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UpdateServlet</servlet-name>
+	    <url-pattern>/update</url-pattern>
+	</servlet-mapping>
+		
+	<welcome-file-list>
+		<welcome-file>index1.html</welcome-file>
+	</welcome-file-list>
+</web-app>
